@@ -157,4 +157,12 @@ Link : https://www.naukri.com/code360/problems/rotate-array_1230543?utm_source=y
 
 9.move zeroes to end
 OPtimal- O(n),O(1)
+1.initialize j=-1;
+iteraate loop from 0 to n, if(arr[i]!=0 tyen j=i, break. Now j=i;
+2.if(j!=-1){
+iteraate loopfrom i=j+1, if(arr[i]!=0{
+swap(arr[i],arr[j]), j++;
+
+Link : https://www.naukri.com/code360/problems/ninja-and-the-zero-s_6581958?utm_source=youtube&utm_medium=affiliate&utm_campaign=striver_Arrayproblems&leftPanelTabValue=PROBLEM
+
 
