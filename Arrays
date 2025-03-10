@@ -1,0 +1,62 @@
+Array is a Linear d.s which stores similar type of data
+1.Largest ele in array
+Brute
+Sort array and return arr[n-1] -> O log n
+Better -> O(n)
+  int max=arr[0];
+        for(int i=0;i<n;i++){
+            if(arr[i]>max){
+                max=arr[i];
+            }
+
+        }
+    return max; 
+Link : https://www.naukri.com/code360/problems/largest-element-in-the-array-largest-element-in-the-array_5026279?utm_source=youtube&utm_medium=affiliate&utm_campaign=striver_Arrayproblems&leftPanelTabValue=SUBMISSION
+
+2. Second largest element
+Brute
+1.Sort array
+2.iteraate loop from n-2 since n-1 is largest
+3.if arr[i]!=largest, then SecLargest is arr[i] and then break
+for(int i=n-2;i>=0;i--){
+  if(arr[i]!=largest){
+    SecLargest=arr[i];
+    break;
+    }
+}
+Optimal:
+ private static int SecondMax(int n, int[] arr) {
+        int Max=arr[0];
+        int Smax=-1;
+
+        for(int i=0;i<n;i++){
+            if(arr[i]>Max){
+                Smax=Max;
+                Max=arr[i];
+            }
+        else if(arr[i]<Max && arr[i]>Smax){
+            Smax=arr[i];
+            }
+        }
+        return Smax;
+    }
+
+3.Second smallest element in array
+private static int SecondMin(int n, int[] arr) {
+        int Min=arr[0];
+        int Smin=Integer.MIN_VALUE;
+
+        for(int i=0;i<n;i++){
+            if(arr[i]<Min){
+                Smin=Min;
+                Min=arr[i];
+            }
+        else if(arr[i]!=Min && arr[i]<Smin){
+            Smin=arr[i];
+            }
+        }
+        return Smin;
+    }
+}
+
+Link : https://www.naukri.com/code360/problems/ninja-and-the-second-order-elements_6581960?utm_source=youtube&utm_medium=affiliate&utm_campaign=striver_Arrayproblems
