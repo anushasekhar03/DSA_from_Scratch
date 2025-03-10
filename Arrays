@@ -24,7 +24,7 @@ for(int i=n-2;i>=0;i--){
     break;
     }
 }
-Optimal:
+Optimal: O(n)
  private static int SecondMax(int n, int[] arr) {
         int Max=arr[0];
         int Smax=-1;
@@ -60,3 +60,42 @@ private static int SecondMin(int n, int[] arr) {
 }
 
 Link : https://www.naukri.com/code360/problems/ninja-and-the-second-order-elements_6581960?utm_source=youtube&utm_medium=affiliate&utm_campaign=striver_Arrayproblems
+4. Check array is Sorted
+ for(int i=1;i<n;i++){
+            if(a[i]>=a[i-1]){
+            }
+            else{
+                return 0;
+            }
+        }
+    return 1;
+
+Link : https://www.naukri.com/code360/problems/ninja-and-the-sorted-check_6581957?utm_source=youtube&utm_medium=affiliate&utm_campaign=striver_Arrayproblems
+
+
+5. Remove duplicates
+Brute force
+Use set -> N log n + N for inserting into set...s.c -> o(n)
+public static int removeDupl(int arr[],int n){
+Set<Integer>s=new HashSet<>():
+for(int i=0;i<n;i++){
+s.add(arr[i]);
+}
+
+Optimal using two pinter approach
+1.initialize i=0;
+2.iterate loop from j=1 till end
+3.if(arrj)!=arr[i]{
+give it front position, arr(i+1)=arr[j];
+then increase i++;
+code:
+int i=0;
+        for(int j=1;j<n;j++){
+            if(arr[j]!=arr[i]){
+                arr[i+1]=arr[j];
+                i++;
+            }
+        }
+        return i+1;
+
+Link : https://www.naukri.com/code360/problems/remove-duplicates-from-sorted-array_1102307?utm_source=youtube&utm_medium=affiliate&utm_campaign=striver_Arrayproblems&leftPanelTabValue=SUBMISSION
