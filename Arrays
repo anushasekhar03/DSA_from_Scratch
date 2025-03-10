@@ -99,3 +99,58 @@ int i=0;
         return i+1;
 
 Link : https://www.naukri.com/code360/problems/remove-duplicates-from-sorted-array_1102307?utm_source=youtube&utm_medium=affiliate&utm_campaign=striver_Arrayproblems&leftPanelTabValue=SUBMISSION
+
+Basic to advanced questions:
+Find the maximum element in an array.
+    Technique: Iteration through the array.
+
+Find the minimum element in an array.
+    Technique: Iteration through the array.
+
+Calculate the sum of all elements in an array.
+    Technique: Iteration through the array.
+
+Reverse an array.
+Technique: Two-pointer approach or iterative swapping.
+
+Check if an array is sorted.
+    Technique: Iteration through the array.
+
+Remove duplicates from a sorted array.
+    Technique: Two-pointer approach.
+
+Rotate an array to the right by k steps.
+    Technique: Basic array manipulation.
+
+Implement an algorithm to find the "Kth" largest element in an array.
+    Technique: Sorting or use of max heap.
+
+Implement an algorithm to find the "Kth" smallest element in an array.
+    Technique: Sorting or use of min heap.
+
+Move all zeroes to the end of the array.
+    Technique: Two-pointer approach.
+7. Left rotate an array by 1 place
+1.store arr[0] in temp
+iterate loop from i=1, put arr[i-1]=arr[i] elements, and at lastput arr[n-1]=temp;
+code:  static int[] rotateArray(int[] arr, int n) {
+       int temp=arr[0];
+       for(int i=1;i<n;i++){
+           arr[i-1]=arr[i];
+       }
+       arr[n-1]=temp;
+    return arr;
+    }
+
+Link : https://www.naukri.com/code360/problems/left-rotate-an-array-by-one_5026278?utm_source=youtube&utm_medium=affiliate&utm_campaign=striver_Arrayproblems&leftPanelTabValue=SUBMISSION
+
+8.left rotate an by k places
+optimal
+1.reverse by d elements
+2,rev d+1 elemts to n
+3.reverse complte n to 0th index
+reverse(arr, 0, k - 1);
+reverse(arr, k, n - 1);
+reverse(arr, 0, n - 1);
+
+Link : https://www.naukri.com/code360/problems/rotate-array_1230543?utm_source=youtube&utm_medium=affiliate&utm_campaign=striver_Arrayproblems&leftPanelTabValue=SUBMISSION
